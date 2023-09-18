@@ -35,7 +35,7 @@ class Monster with AttackBehavior {
   @override
   void attack(Monster target) {
     print('${this.name}이 ${target.name}을 공격합니다.');
-    target.hp - this.weapon.damage;
+    target.hp -= this.weapon.damage;
   }
 }
 
